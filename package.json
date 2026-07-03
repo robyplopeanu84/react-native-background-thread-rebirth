@@ -22,10 +22,10 @@
     "!**/__mocks__"
   ],
   "scripts": {
+    "build": "bob build",
     "test": "jest",
     "typescript": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
-    "prepare": "bob build",
     "release": "release-it",
     "example": "yarn --cwd example",
     "bootstrap": "yarn example && yarn && yarn example pods"
@@ -47,10 +47,6 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
-  "dependencies": {
-    "react-native-builder-bob": "^0.18.3",
-    "typescript": "~5.9.2"
-  },
   "devDependencies": {
     "@arkweid/lefthook": "^0.7.7",
     "@babel/eslint-parser": "^7.18.2",
@@ -69,7 +65,9 @@
     "prettier": "^2.0.5",
     "react": "17.0.2",
     "react-native": "^0.63.3",
-    "release-it": "^15.0.0"
+    "react-native-builder-bob": "^0.18.3",
+    "release-it": "^15.0.0",
+    "typescript": "~5.9.2"
   },
   "resolutions": {
     "@types/react": "17.0.21"
